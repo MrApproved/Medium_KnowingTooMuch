@@ -6,6 +6,6 @@ namespace Example2_SurveyService.SurveyLibrary.Models
     {
         public string Subject { get; set; }
         public string Body { get; set; }
-        public string Filter { get; set; }
+        public string CarManufacturer { get; set; }
     }
 }

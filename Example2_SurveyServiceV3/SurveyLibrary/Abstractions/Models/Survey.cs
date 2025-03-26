@@ -4,6 +4,5 @@
     {
         string Subject { get; set; }
         string Body { get; set; }
-        string Filter { get; set; }
     }
 }

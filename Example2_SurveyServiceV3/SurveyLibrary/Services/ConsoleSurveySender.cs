@@ -7,6 +7,6 @@ namespace Example2_SurveyService.SurveyLibrary.Services
     public class ConsoleSurveySender : SurveySender
     {
         public void Send(SendSurveyRequest request, Survey survey)
-            => Console.WriteLine($"knowingtomuch@medium.com - {request.EmailAddress}. Subject: {survey.Subject} - {survey.Body}");
+            => Console.WriteLine($"knowingtomuch@medium.com - {request.Mobile}. Subject: {survey.Subject} - {survey.Body}");
     }
 }

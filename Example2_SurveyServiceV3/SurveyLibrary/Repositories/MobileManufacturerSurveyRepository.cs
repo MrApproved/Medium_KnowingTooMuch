@@ -13,6 +13,6 @@ namespace Example2_SurveyService.SurveyLibrary.Repositories
         }
 
         public Survey Search(string filter)
-            => _surveys.First(x => x.Filter.ToLower() == filter.ToLower());
+            => _surveys.First(x => x.MobileManufacturer.ToLower() == filter.ToLower());
     }
 }

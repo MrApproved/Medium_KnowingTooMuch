@@ -11,7 +11,12 @@ namespace Example2_SurveyService
             var mobileManufacturerSurveyRepository = new MobileManufacturerSurveyRepository(new List<MobileManufacturerSurvey>()
             {
                 new MobileManufacturerSurvey() {
-                    Filter = "Sony",
+                    MobileManufacturer = "Default",
+                    Body = "Survey Link",
+                    Subject = "Survey"
+                },
+                new MobileManufacturerSurvey() {
+                    MobileManufacturer = "Sony",
                     Body = "Sony Survey Link",
                     Subject = "Sony Survey"
                 }
@@ -20,7 +25,7 @@ namespace Example2_SurveyService
             new SurveyService(mobileManufacturerSurveyRepository).SendSurvey(new SendSurveyRequest()
             {
                 AllowPromotionalEmails = true,
-                Filter = "SonY",
+                Filter = "asd",
                 EmailAddress = "test@medium.com"
             });
         }
